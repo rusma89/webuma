@@ -1,0 +1,365 @@
+body{
+    background-color:#FCE2DB;
+    font-size:16px
+    color:#444;
+    font-family: sans-serif;
+}
+
+.content{
+    width: 80%;
+    margin: 10px auto;
+}
+
+/*header*/
+header{
+    background-color: #FCE2DB;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 10px;
+}
+
+header h1.judul,
+header h3.deskripsi{
+    text-align: center;
+}
+
+/*CSS for Menu*/
+#sse1
+{
+    /*You can decorate the menu's container, such as adding background images through this block*/
+    background-color: #FF8FB1;
+    height: 38px;
+    padding: 15px;
+    border-radius: 3px;
+}
+#sses1
+{
+    margin:0 auto;/*This will make the menu center-aligned. Removing this line will make the menu align left.*/
+}
+#sses1 ul
+{
+    position: relative;
+    list-style-type: none;
+    float:left;
+    padding:0;margin:0;
+    border-bottom:solid 1px #FCE2DB;
+}
+#sses1 li
+{
+    float:left;
+    list-style-type: none;
+    padding:0;margin:0;background-image:none;
+}
+/*CSS for background bubble-Menu*/
+#sses1 li.highlight
+{
+    background-color:#FCE2DB;
+    top:36px;
+    height:2px;
+    border-bottom:solid 1px #C00;
+    z-index: 1;
+    position: absolute;
+    overflow:hidden;
+
+}
+#sses1 li a
+{
+    height:30px;
+    padding-top: 8px;
+    margin: 0 20px;/*used to adjust the distance between each menu item. Now the distance is 20+20=40px.*/
+    color: #fff;
+    font: normal 12px arial;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: left;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+/*CSS for portfolio*/
+#cv {
+   width: 300px;
+   border-radius: 10%;
+   border: 5px solid #FF8FB1;
+}
+
+/*CSS for footer*/
+div.cr {
+	text-align: center;
+	color: #FF8FB1;
+  margin-top: 10px;
+}
+
+/*CSS for contact form*/
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: #FF8FB1;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #B270A2;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #FCE2DB;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #FCE2DB;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #FCE2DB;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #FCE2DB;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #FCE2DB;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: #B270A2;
+  border: 1px solid #7A4495;
+  border-radius: 8px;
+  color: #FCE2DB;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #b9134f;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+
+/*CSS for home*/
+p {
+  font-weight: 700;
+  text-align: center;
+  font-size: 50px;
+  font-family: Georgia, serif;
+  background: linear-gradient(100deg, #7A4495, #fff, #7A4495);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+/*CSS for Vlog*/
+h3 {
+  text-align: center;
+  font-style: italic;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*CSS for Team*/
+h1 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Georgia, serif;
+}
+h2 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Georgia, serif;
+}
+h3 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Georgia, serif;
+}
+img {
+	width: 300px;
+    border-radius: 50%;
+	border: 5px solid #FF8FB1;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
